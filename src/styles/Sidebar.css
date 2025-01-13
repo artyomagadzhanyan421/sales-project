@@ -1,0 +1,93 @@
+.Sidebar {
+    background: #090d06;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.Sidebar.show {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.Sidebar ul {
+    text-align: center;
+    margin: 35px 0px;
+}
+
+.Sidebar ul li:not(:nth-child(1)) {
+    margin-top: 4px;
+}
+
+.Sidebar ul li a {
+    color: #e1ffc7;
+    font-family: "Passion One", serif;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.bottom, .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 130px;
+}
+
+.top {
+    justify-content: space-between;
+    padding: 0px 80px;
+}
+
+.top i {
+    cursor: pointer;
+    display: flex;
+}
+
+.bottomSocials {
+    display: flex;
+    gap: 8px;
+}
+
+.bottomSocials a {
+    background: #a9ff5c;
+    display: flex;
+    padding: 11px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.bottomSocials a:hover {
+    transform: scale(0.92);
+}
+
+@media(max-width: 675px) {
+    .top {
+        padding: 0px 45px;
+    }
+}
+
+@media(max-width: 500px) {
+    .bottom, .top {
+        min-height: 105px;
+    }
+
+    .Sidebar ul li a {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 450px) {
+    .top {
+        padding: 0px 35px;
+    }
+}

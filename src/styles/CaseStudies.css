@@ -1,0 +1,106 @@
+.case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin-top: 60px;
+}
+
+.case {
+    overflow: hidden;
+    position: relative;
+    border: 1.5px solid #f1fbe826;
+    border-radius: 28px;
+    height: 520px;
+}
+
+.case:hover img {
+    transform: scale(1.1);
+}
+
+.case::before {
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.8), transparent);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    z-index: 1;
+}
+
+.case img {
+    object-fit: cover;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+
+.case-text-two {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    padding: 32px;
+    z-index: 1;
+}
+
+.case-text-two p {
+    background: #1f2b15;
+    border: 1.5px solid #426027;
+    color: #e1ffc7;
+    font-size: 14px;
+    padding: 10px 18px;
+    border-radius: 100px;
+}
+
+.case-text {
+    color: #f1fbe8;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    padding: 32px;
+    z-index: 1;
+}
+
+.case-head {
+    font-family: "Passion One", serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 1em;
+}
+
+.case-desc {
+    font-size: 18px;
+    margin-top: 12px;
+    max-width: 440px;
+    line-height: 1.5em;
+}
+
+.case-desc.form {
+    margin-top: 5px;
+}
+
+.case-desc.data {
+    max-width: 630px;
+}
+
+@media(max-width: 990px) {
+    .case-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 900px) {
+    .case-text-two, .case-text {
+        padding: 25px;
+    }
+}
+
+@media(max-width: 500px) {
+    .case-desc {
+        font-size: 16px;
+    }
+}

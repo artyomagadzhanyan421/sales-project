@@ -1,0 +1,156 @@
+.Block {
+    padding: 100px 0px;
+}
+
+.gridOne {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin-top: 60px;
+}
+
+.gridOne .grid-block:nth-child(1) {
+    grid-column: span 2;
+}
+
+.gridOne .grid-block:nth-child(2), 
+.gridOne .grid-block:nth-child(3) {
+    grid-template-columns: 1fr;
+    height: fit-content;
+}
+
+.gridOne .grid-block:nth-child(2) .grid-image, 
+.gridOne .grid-block:nth-child(3) .grid-image {
+    height: 300px;
+}
+
+.grid-block {
+    background: #e1ffc7;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 30px;
+}
+
+.grid-text {
+    color: #356905;
+    padding: 56px 60px;
+}
+
+.grid-icon {
+    background: #356905;
+    display: flex;
+    width: fit-content;
+    border-radius: 50%;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.grid-icon img {
+    width: 40px;
+}
+
+.grid-head {
+    text-transform: uppercase;
+    font-family: "Passion One", serif;
+    font-size: 48px;
+    line-height: 0.93em;
+    max-width: 470px;
+}
+
+.grid-desc {
+    color: #090d06;
+    font-size: 19px;
+    margin-top: 20px;
+    line-height: 1.42em;
+    font-weight: 450;
+}
+
+.grid-image {
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.grid-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width: 1496px) {
+    .Block {
+        margin: auto;
+        width: 1336px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .gridOne {
+        grid-template-columns: 1fr;
+    }
+
+    .gridOne .grid-block:nth-child(1) {
+        grid-column: initial;
+    }
+
+    .gridOne .grid-block:nth-child(1) .grid-image {
+        height: 300px;
+    }
+
+    .grid-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 675px) {
+    .grid-text {
+        padding: 50px 40px;
+    }
+
+    .grid-head {
+        font-size: 40px;
+    }
+
+    .grid-desc {
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 500px) {
+    .grid-text {
+        padding: 45px 25px;
+    }
+
+    .grid-icon img {
+        width: 35px;
+    }
+
+    .grid-desc {
+        margin-top: 15px;
+    }
+
+    .gridOne .grid-block:nth-child(1) .grid-image, 
+    .gridOne .grid-block:nth-child(2) .grid-image, 
+    .gridOne .grid-block:nth-child(3) .grid-image {
+        height: 250px;
+    }
+}
+
+@media(max-width: 450px) {
+    .grid-head {
+        font-size: 37px;
+    }
+
+    .grid-desc {
+        font-size: 16px;
+        margin-top: 13px;
+    }
+
+    .grid-text {
+        padding: 40px 25px;
+    }
+
+    .grid-icon {
+        margin-bottom: 30px;
+    }
+}

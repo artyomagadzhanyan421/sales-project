@@ -1,0 +1,138 @@
+footer {
+    background: url("/footer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 140px 100px;
+    border-radius: 28px;
+}
+
+.footerBtm {
+    background-color: #131c0b;
+    padding: 50px;
+    border-radius: 28px;
+    margin-top: 15px;
+}
+
+.footerBtm.formFooter {
+    margin-top: 200px;
+}
+
+.footerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footerFlex ul {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap: 28px;
+    transform: translate(-50%, -50%);
+}
+
+.footerFlex ul li a {
+    color: #f1fbe8;
+    position: relative;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    transition: 0.3s;
+}
+
+.footerFlex ul li a:hover {
+    color: #979f90;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.socials a {
+    background: #a9ff5c;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.socials a:hover {
+    transform: scale(0.92);
+}
+
+#footerTwo {
+    border-top: 1.5px solid #1f2b15;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+
+#footerTwo p {
+    color: #979f90;
+    font-size: 14px;
+}
+
+#footerTwo span {
+    color: #f1fbe8;
+    font-size: 14px;
+}
+
+@media(max-width: 1300px) {
+    .footerFlex ul {
+        position: initial;
+        top: initial;
+        left: initial;
+        transform: initial;
+        flex-direction: column;
+        gap: 20px;
+        margin: 50px 0px;
+    }
+
+    .footerFlex span {
+        display: none;
+    }
+
+    #footerTwo {
+        padding-top: 40px;
+    }
+
+    .footerFlex {
+        flex-direction: column;
+        align-items: initial;
+    }
+}
+
+@media(max-width: 900px) {
+    footer {
+        padding: 100px 50px;
+    }
+}
+
+@media(max-width: 500px) {
+    .footerBtm {
+        padding: 50px 30px;
+    }
+
+    .footerFlex ul {
+        gap: 17px;
+    }
+
+    .footerFlex ul li a {
+        font-size: 15.5px;
+    }
+}
+
+@media(max-width: 500px) {
+    footer {
+        padding: 80px 40px;
+    }
+}
+
+@media(max-width: 500px) {
+    footer {
+        padding: 70px 35px;
+    }
+}

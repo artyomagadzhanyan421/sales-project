@@ -1,0 +1,66 @@
+.quests {
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto auto auto;
+    max-width: 850px;
+    gap: 10px;
+}
+
+.quest span {
+    background: #1f2b15;
+    color: #e1ffc7;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 25px 30px;
+    margin-top: 10px;
+    line-height: 1.4em;
+}
+
+.quest div {
+    background: #e1ffc7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 10px;
+    gap: 25px;
+    padding: 2px 5px 2px 25px;
+}
+
+.quest div p {
+    color: #090d06;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    font-size: 20px;
+    line-height: 1.25em;
+}
+
+.quest div i {
+    background: #7fd136;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+@media(max-width: 700px) {
+    .quest div p {
+        font-size: 18px;
+    }
+
+    .quest span {
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 500px) {
+    .quest span {
+        font-size: 16px;
+    }
+
+    .quest div p {
+        font-size: 17px;
+    }
+}

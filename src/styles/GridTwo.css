@@ -1,0 +1,29 @@
+.gridTwo {
+    display: grid;
+    color: #e1ffc7;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
+    grid-gap: 80px;
+}
+
+.gridTwo img {
+    width: 56px;
+    margin-bottom: 30px;
+}
+
+@media(max-width: 1000px) {
+    .gridTwo {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 60px;
+    }
+}
+
+@media(max-width: 700px) {
+    .gridTwo {
+        grid-template-columns: 1fr;
+    }
+
+    .gridTwo img {
+        margin-bottom: 25px;
+    }
+}

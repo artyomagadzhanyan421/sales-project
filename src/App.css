@@ -1,0 +1,18 @@
+.App {
+    background: #090d06;
+    color: white;
+    padding: 0px 80px;
+    min-height: 100vh;
+}
+
+@media(max-width: 675px) {
+    .App {
+        padding: 0px 45px;
+    }
+}
+
+@media(max-width: 450px) {
+    .App {
+        padding: 0px 35px;
+    }
+}

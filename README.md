@@ -8,7 +8,7 @@ Forge prioritizes user engagement through intuitive navigation and interactive e
 
 ### Highlights
 
-* 6 Well-Organized Pages
+* 7 Well-Organized Pages
 * Tablet & Mobile Adaptation
 * Flexible Content
 * Interactions & Animations
@@ -21,3 +21,4 @@ Forge prioritizes user engagement through intuitive navigation and interactive e
 * Case Studies
 * Case Study CMS
 * Contact Us
+* Error 404

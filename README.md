@@ -1,6 +1,6 @@
 ![Project Logo](./public/cover.png)
 
-# Forge | Offical Website
+# Marketing Landing Page
 
 Forge – gateway to unparalleled digital marketing excellence. Crafted with meticulous attention to detail and fueled by innovation, Forge offers a bespoke suite of features tailored to amplify online presence. From sleek design elements to immersive interactive features, Forge redefines sophistication and professionalism, beckoning potential clients to explore brand's distinctive offerings.
 

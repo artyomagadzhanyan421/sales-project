@@ -1,3 +1,5 @@
+![Project Logo](./public/cover.png)
+
 ### Marketing Multi-Page Website
 
 * React Router for navigation between pages

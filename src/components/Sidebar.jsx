@@ -12,7 +12,7 @@ function Sidebar({ sidebar, click }) {
     <div className={sidebar ? "Sidebar show" : "Sidebar"}>
         <div className="top">
             <Link to="/" className='logo' onClick={click}>
-                <img src="./logo.svg" alt="logo" />
+                <img src="/logo.svg" alt="logo" />
             </Link>     
             <i><box-icon onClick={click} name='x-circle' size="24px" color="#f1fbe8"></box-icon></i>
         </div>

@@ -18,7 +18,7 @@ function Footer() {
       <div className="footerBtm">
         <div className="footerFlex">
           <a href="#" className='logo'>
-            <img src="./logo.svg" alt="logo" />
+            <img src="/logo.svg" alt="logo" />
           </a>
 
           <ul>

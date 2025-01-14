@@ -12,7 +12,7 @@ function Navbar({ click }) {
     <div className="Navbar">
       <nav>
         <Link to="/" className='logo'>
-          <img src="./logo.svg" alt="logo" />
+          <img src="/logo.svg" alt="logo" />
         </Link>
 
         <ul>

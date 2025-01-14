@@ -50,7 +50,7 @@ function CaseStudiesList() {
 
                 <div className="case-grid">
                     {caseStudies.map((caseStudy) => (
-                        <Link to='/casestudy' className="case" key={caseStudy.id}>
+                        <Link to={`/casestudy/${caseStudy.id}`} className="case" key={caseStudy.id}>
                             <img src={caseStudy.imgSrc} alt="case" />
                             <div className="case-text-two">
                                 <p>{caseStudy.category}</p>

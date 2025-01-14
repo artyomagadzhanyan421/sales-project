@@ -1,5 +1,5 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useCaseStudies } from "../hooks/useCaseStudies";
@@ -8,11 +8,20 @@ import { useCaseStudies } from "../hooks/useCaseStudies";
 import Footer from "../components/Footer";
 
 function CaseStudy() {
+  const { id } = useParams(); 
   const caseStudies = useCaseStudies();
-  
+
+  const caseStudy = caseStudies.find(cs => cs.id === parseInt(id)); 
+
   useEffect(() => {
-    document.title = "Forge | Case Study";
-  }, []);
+    if (caseStudy) {
+      document.title = `Forge | ${caseStudy.title}`;
+    }
+  }, [caseStudy]);
+
+  if (!caseStudy) {
+    return <div>Case study not found</div>; 
+  }
 
   const randomCaseStudies = useMemo(() => {
     const shuffled = [...caseStudies].sort(() => 0.5 - Math.random());
@@ -29,33 +38,33 @@ function CaseStudy() {
         textAlign: "center",
       }}> 
         <div className='caseFlex'>
-          <p className="pageHead caseType">Content Marketing</p>  
-          <p className="pageHead caseType">2024</p>   
+          <p className="pageHead caseType">{caseStudy.category}</p>  
+          <p className="pageHead caseType">{caseStudy.year}</p>   
         </div>
-        <p className="heading"><span>TechLift Strategy</span></p>
-        <p className="desc">TechLift Strategy is a dynamic technology consulting firm specializing in providing innovative solutions</p>
+        <p className="heading"><span>{caseStudy.title}</span></p>
+        <p className="desc">{caseStudy.description}</p>
       </div>
 
       <div id="pageMedia" style={{marginBottom: 125}}>
-        <img src="./case/c1.jpg" alt="page" />
+        <img src={caseStudy.imgSrc} alt="page" />
       </div>
 
       <div className="Block">
         <div className="caseData">
           <p className="case-head" style={{color: "#a9ff5c"}}>Overview</p>
-          <p className="case-desc data" style={{color: "#979f90"}}>TechLift Strategy is a dynamic technology consulting firm specializing in providing innovative solutions to businesses across various industries. With a focus on enhancing efficiency and driving growth, TechLift Strategy serves as a trusted partner for companies seeking to navigate the rapidly evolving digital landscape.</p>
+          <p className="case-desc data" style={{color: "#979f90"}}>{caseStudy.overview}</p>
         </div>
         <div className="caseData">
           <p className="case-head" style={{color: "#a9ff5c"}}>Challenge</p>
-          <p className="case-desc data" style={{color: "#979f90"}}>Before partnering with our agency, TechLift Strategy faced the challenge of limited online visibility and struggled to effectively reach their target audience. Despite offering cutting-edge solutions, they were unable to showcase their expertise and differentiate themselves in a crowded market.</p>
+          <p className="case-desc data" style={{color: "#979f90"}}>{caseStudy.challenge}</p>
         </div>
         <div className="caseData">
           <p className="case-head" style={{color: "#a9ff5c"}}>Strategy</p>
-          <p className="case-desc data" style={{color: "#979f90"}}>To address TechLift Strategy's challenges, we developed a comprehensive digital marketing strategy tailored to their unique needs. Our approach included content marketing. This strategy aimed to drive engagement, and nurture leads.</p>
+          <p className="case-desc data" style={{color: "#979f90"}}>{caseStudy.strategy}</p>
         </div>
         <div className="caseData">
           <p className="case-head" style={{color: "#a9ff5c"}}>Results</p>
-          <p className="case-desc data" style={{color: "#979f90"}}>The implementation of our digital marketing strategies yielded impressive results for TechLift Strategy. Organic traffic to the website increased by 75% within the first six months of the campaign, lead generation and conversion rates improved by 50%, social media engagement doubled, and brand mentions soared across digital channels. This enhanced online presence and strategic marketing efforts led to a notable uptick in sales inquiries and business opportunities, resulting in a substantial increase in revenue.</p>
+          <p className="case-desc data" style={{color: "#979f90"}}>{caseStudy.results}</p>
         </div>
       </div>
 
@@ -68,7 +77,7 @@ function CaseStudy() {
         </center>
         <div className="case-grid">
           {randomCaseStudies.map((caseStudy) => (
-            <Link to="/casestudy" className="case" key={caseStudy.id}>
+            <Link to={`/casestudy/${caseStudy.id}`} className="case" key={caseStudy.id}>
               <img src={caseStudy.imgSrc} alt="case" />
               <div className="case-text-two">
                 <p>{caseStudy.category}</p>

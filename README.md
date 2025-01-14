@@ -22,3 +22,5 @@ Forge prioritizes user engagement through intuitive navigation and interactive e
 * Case Study CMS
 * Contact Us
 * Error 404
+
+![Project Logo](/cover.png)

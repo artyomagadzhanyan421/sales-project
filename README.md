@@ -1,6 +1,4 @@
-![Project Logo](./public/cover.png)
-
-## Marketing Multi-Page Website
+# Marketing Multi-Page Website
 
 * React Router for navigation between pages
 * React reusable components
@@ -10,3 +8,5 @@
 * Custom 404 component for errors loading
 
 💙 Follow to see more conetent like this!
+
+![Project Logo](./public/cover.png)

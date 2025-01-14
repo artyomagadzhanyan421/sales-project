@@ -13,7 +13,7 @@ import CaseStudiesList from './pages/CaseStudiesList';
 import CaseStudy from './pages/CaseStudy';
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import Error404 from './components/Error404';
+import Error404 from './pages/Error404';
 
 // ScrollToTop Component
 const ScrollToTop = () => {

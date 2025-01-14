@@ -13,6 +13,7 @@ import CaseStudiesList from './pages/CaseStudiesList';
 import CaseStudy from './pages/CaseStudy';
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import Error404 from './components/Error404';
 
 // ScrollToTop Component
 const ScrollToTop = () => {
@@ -43,6 +44,7 @@ function App() {
         <Route path="/casestudy/:id" element={<CaseStudy />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </div>
   );

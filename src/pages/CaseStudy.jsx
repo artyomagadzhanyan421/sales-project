@@ -6,6 +6,7 @@ import { useCaseStudies } from "../hooks/useCaseStudies";
 
 // Components
 import Footer from "../components/Footer";
+import Error404 from '../components/Error404';
 
 function CaseStudy() {
   const { id } = useParams(); 
@@ -20,7 +21,7 @@ function CaseStudy() {
   }, [caseStudy]);
 
   if (!caseStudy) {
-    return <div>Case study not found</div>; 
+    return <Error404 />
   }
 
   const randomCaseStudies = useMemo(() => {

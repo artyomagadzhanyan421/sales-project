@@ -23,4 +23,4 @@ Forge prioritizes user engagement through intuitive navigation and interactive e
 * Contact Us
 * Error 404
 
-![Project Logo](/cover.png)
+![Project Logo](./public/cover.png)

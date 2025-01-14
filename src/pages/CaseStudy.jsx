@@ -4,9 +4,11 @@ import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useCaseStudies } from "../hooks/useCaseStudies";
 
+// Pages
+import Error404 from '../pages/Error404';
+
 // Components
 import Footer from "../components/Footer";
-import Error404 from '../components/Error404';
 
 function CaseStudy() {
   const { id } = useParams(); 

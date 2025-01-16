@@ -75,6 +75,6 @@ export const useCaseStudies = () => {
             results: "The implementation of our digital marketing strategies yielded impressive results for Travel Bliss Adventures. Organic traffic to their website increased by 80% within the first three months of the campaign, and they experienced a 50% increase in leads and bookings. Additionally, their brand visibility significantly improved, with social media engagement doubling and brand mentions soaring across digital channels. These enhancements led to a notable uptick in tour bookings and revenue for Travel Bliss Adventures."
         },
     ]);
-    
+
     return caseStudies;
 };

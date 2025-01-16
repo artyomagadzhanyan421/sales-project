@@ -30,7 +30,7 @@ function AboutPage() {
         </p>
       </div>
 
-      <div id="pageMedia" style={{marginBottom: 125}}>
+      <div id="pageMedia" style={{ marginBottom: 125 }}>
         <img src="./pages/about.webp" alt="page" />
       </div>
 
@@ -40,7 +40,7 @@ function AboutPage() {
             <p className="pageHead">Who We Are</p>
             <p className="heading section">Discover Our <span>Marketing Story</span></p>
             <p className="page-desc">We're storytellers, strategists, and innovators on a mission to redefine success. Our journey began with a simple belief, that every brand has a unique story waiting to be told, and we're here to help them share it with the world. With a blend of creativity, expertise, and unwavering dedication, we craft solutions that captivate audiences, drive growth, and elevate brands to heights. <br /><br />
-            From our humble beginnings to our current standing as industry leaders, our commitment to excellence remains steadfast. Join us as we continue to push boundaries, challenge norms, and shape the future of marketing.</p>
+              From our humble beginnings to our current standing as industry leaders, our commitment to excellence remains steadfast. Join us as we continue to push boundaries, challenge norms, and shape the future of marketing.</p>
             <Link to="/contact" className='link'>Contact Us</Link>
           </div>
           <div className="gridImage">

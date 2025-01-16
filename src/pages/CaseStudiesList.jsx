@@ -15,17 +15,17 @@ function CaseStudiesList() {
     useEffect(() => {
         document.title = "Forge | Case Studies";
     }, []);
-    
+
     return (
         <div>
             <div
                 style={{
-                padding: "70px 0px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                textAlign: "center",
-            }}>
+                    padding: "70px 0px",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    textAlign: "center",
+                }}>
                 <p className="heading"><span>Stories </span>Unveiling Our Triumphs</p>
                 <p className="desc">
                     Collection of illuminating case studies, where expert strategy
@@ -33,7 +33,7 @@ function CaseStudiesList() {
                 </p>
             </div>
 
-            <div id="pageMedia" style={{marginBottom: 125}}>
+            <div id="pageMedia" style={{ marginBottom: 125 }}>
                 <img src="./pages/casestudies.webp" alt="page" />
             </div>
 

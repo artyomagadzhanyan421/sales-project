@@ -34,7 +34,7 @@ function Footer() {
             <a href="https://x.com/?lang=en" target='_blank'><box-icon name='twitter' type='logo' size="20px"></box-icon></a>
           </div>
         </div>
-        <div className="footerFlex" id='footerTwo'> 
+        <div className="footerFlex" id='footerTwo'>
           <p>© Forge 2025, All Rights Reserved</p>
           <span>Lisencing</span>
         </div>

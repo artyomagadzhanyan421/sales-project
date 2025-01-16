@@ -63,7 +63,7 @@ const useStories = () => {
             text: "Forge’s targeted B2B campaigns and thought leadership content significantly contributed to our market positioning."
         }
     ]);
-    
+
     return stories;
 };
 

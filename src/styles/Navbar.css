@@ -75,7 +75,9 @@ nav ul li a:hover::before {
 }
 
 @media(max-width: 950px) {
-    nav ul, .c-link {
+
+    nav ul,
+    .c-link {
         display: none;
     }
 

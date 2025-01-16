@@ -36,20 +36,20 @@ function Form() {
           <div>
             <img src="./pages/contact1.svg" alt="image" style={image} />
           </div>
-          <p className='case-head' style={{color: "#356905"}}>Drop Us a Line</p>
-          <p className='case-desc form' style={{color: '#003800'}}>Reach out and let's begin the dialogue</p>
+          <p className='case-head' style={{ color: "#356905" }}>Drop Us a Line</p>
+          <p className='case-desc form' style={{ color: '#003800' }}>Reach out and let's begin the dialogue</p>
         </a>
         <a href="https://calendly.com/" target='_blank'>
           <div>
             <img src="./pages/contact2.svg" alt="image" style={image} />
           </div>
-          <p className='case-head' style={{color: "#356905"}}>Book a Call</p>
-          <p className='case-desc form' style={{color: '#003800'}}>Schedule consultation in our Calendly</p>
+          <p className='case-head' style={{ color: "#356905" }}>Book a Call</p>
+          <p className='case-desc form' style={{ color: '#003800' }}>Schedule consultation in our Calendly</p>
         </a>
 
         <form>
-          <p className='case-head' style={{color: "#e1ffc7"}}>Connect with Ease</p>
-          <p className='case-desc' style={{color: "#e1ffc7"}}>Your inquiries, ideas, and collaboration opportunities are just a click away. Let's start the conversation.</p>
+          <p className='case-head' style={{ color: "#e1ffc7" }}>Connect with Ease</p>
+          <p className='case-desc' style={{ color: "#e1ffc7" }}>Your inquiries, ideas, and collaboration opportunities are just a click away. Let's start the conversation.</p>
           <div className="formInputs">
             <div style={flex}>
               <span>Name</span>
@@ -66,7 +66,7 @@ function Form() {
             <button type='submit' className="link button">Send a Question</button>
           </div>
         </form>
-        
+
         <div className="formImage" style={formImageContainer}>
           <img src="./pages/contact3.jpg" alt="image" style={formImage} />
         </div>
@@ -91,7 +91,7 @@ function Form() {
             <a href="https://x.com/?lang=en" target='_blank'><box-icon name='twitter' type='logo' size="20px"></box-icon></a>
           </div>
         </div>
-        <div className="footerFlex" id='footerTwo'> 
+        <div className="footerFlex" id='footerTwo'>
           <p>© Forge 2025, All Rights Reserved</p>
           <span>Lisencing</span>
         </div>

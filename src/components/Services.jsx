@@ -1,13 +1,13 @@
 import React from "react";
-import useServices from "../hooks/useServices"; 
+import useServices from "../hooks/useServices";
 import { Link } from "react-router-dom";
 
 // CSS
 import "../styles/Services.css";
 
 function Services() {
-    const services = useServices(); 
-    
+    const services = useServices();
+
     return (
         <div className="Block">
             <center>

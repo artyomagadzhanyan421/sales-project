@@ -12,8 +12,8 @@ function Faq() {
   const toggleAnswerVisibility = (index) => {
     setVisibleAnswers((prev) =>
       prev.includes(index)
-        ? prev.filter((i) => i !== index) 
-        : [...prev, index] 
+        ? prev.filter((i) => i !== index)
+        : [...prev, index]
     );
   };
 
@@ -58,7 +58,7 @@ function Faq() {
           <div className="quest" key={index}>
             <div onClick={() => toggleAnswerVisibility(index)}>
               <p>{faq.question}</p>
-              <i style={{display: "flex"}}>
+              <i style={{ display: "flex" }}>
                 <box-icon name={visibleAnswers.includes(index) ? "x" : "plus"} size="28px"></box-icon>
               </i>
             </div>

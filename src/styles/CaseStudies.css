@@ -94,7 +94,9 @@
 }
 
 @media(max-width: 900px) {
-    .case-text-two, .case-text {
+
+    .case-text-two,
+    .case-text {
         padding: 25px;
     }
 }

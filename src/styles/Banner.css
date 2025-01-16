@@ -111,7 +111,9 @@
 }
 
 @media(max-width: 500px) {
-    .bannerOne, .bannerTwo {
+
+    .bannerOne,
+    .bannerTwo {
         padding: 80px 40px;
     }
 
@@ -125,7 +127,9 @@
 }
 
 @media(max-width: 450px) {
-    .bannerOne, .bannerTwo {
+
+    .bannerOne,
+    .bannerTwo {
         padding: 70px 35px;
     }
 }

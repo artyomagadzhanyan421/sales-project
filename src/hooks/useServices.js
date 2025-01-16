@@ -39,7 +39,7 @@ const useServices = () => {
             description: "We strategize, curate, and engage to grow your following, foster brand loyalty, and drive meaningful interactions with your audience.",
         },
     ]);
-    
+
     return services;
 };
 

@@ -24,8 +24,8 @@ function ContactPage() {
         <p className="heading"><span>Let's Make</span> Things Happen Together</p>
         <p className="desc">Ready to embark on a journey of innovation? Contact us today to explore how we can collaborate and bring your ideas to life.</p>
       </div>
-     
-      <div id="pageMedia" style={{marginBottom: 125}}>
+
+      <div id="pageMedia" style={{ marginBottom: 125 }}>
         <img src="./pages/contact.webp" alt="image" />
       </div>
 

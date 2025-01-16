@@ -11,10 +11,10 @@ import Error404 from '../pages/Error404';
 import Footer from "../components/Footer";
 
 function CaseStudy() {
-  const { id } = useParams(); 
+  const { id } = useParams();
   const caseStudies = useCaseStudies();
 
-  const caseStudy = caseStudies.find(cs => cs.id === parseInt(id)); 
+  const caseStudy = caseStudies.find(cs => cs.id === parseInt(id));
 
   useEffect(() => {
     if (caseStudy) {
@@ -39,35 +39,35 @@ function CaseStudy() {
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
-      }}> 
+      }}>
         <div className='caseFlex'>
-          <p className="pageHead caseType">{caseStudy.category}</p>  
-          <p className="pageHead caseType">{caseStudy.year}</p>   
+          <p className="pageHead caseType">{caseStudy.category}</p>
+          <p className="pageHead caseType">{caseStudy.year}</p>
         </div>
         <p className="heading"><span>{caseStudy.title}</span></p>
         <p className="desc">{caseStudy.description}</p>
       </div>
 
-      <div id="pageMedia" style={{marginBottom: 125}}>
+      <div id="pageMedia" style={{ marginBottom: 125 }}>
         <img src={caseStudy.imgSrc} alt="page" />
       </div>
 
       <div className="Block">
         <div className="caseData">
-          <p className="case-head" style={{color: "#a9ff5c"}}>Overview</p>
-          <p className="case-desc data" style={{color: "#979f90"}}>{caseStudy.overview}</p>
+          <p className="case-head" style={{ color: "#a9ff5c" }}>Overview</p>
+          <p className="case-desc data" style={{ color: "#979f90" }}>{caseStudy.overview}</p>
         </div>
         <div className="caseData">
-          <p className="case-head" style={{color: "#a9ff5c"}}>Challenge</p>
-          <p className="case-desc data" style={{color: "#979f90"}}>{caseStudy.challenge}</p>
+          <p className="case-head" style={{ color: "#a9ff5c" }}>Challenge</p>
+          <p className="case-desc data" style={{ color: "#979f90" }}>{caseStudy.challenge}</p>
         </div>
         <div className="caseData">
-          <p className="case-head" style={{color: "#a9ff5c"}}>Strategy</p>
-          <p className="case-desc data" style={{color: "#979f90"}}>{caseStudy.strategy}</p>
+          <p className="case-head" style={{ color: "#a9ff5c" }}>Strategy</p>
+          <p className="case-desc data" style={{ color: "#979f90" }}>{caseStudy.strategy}</p>
         </div>
         <div className="caseData">
-          <p className="case-head" style={{color: "#a9ff5c"}}>Results</p>
-          <p className="case-desc data" style={{color: "#979f90"}}>{caseStudy.results}</p>
+          <p className="case-head" style={{ color: "#a9ff5c" }}>Results</p>
+          <p className="case-desc data" style={{ color: "#979f90" }}>{caseStudy.results}</p>
         </div>
       </div>
 

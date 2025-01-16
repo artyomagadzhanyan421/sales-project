@@ -63,7 +63,7 @@ form {
     color: #f1fbe84d;
 }
 
-.formInputs div input:hover, 
+.formInputs div input:hover,
 .formInputs div input:focus {
     border: 1.5px solid #f1fbe8;
 }
@@ -91,7 +91,7 @@ form {
 
     .formInputs div input {
         padding: 22px;
-        font-size: 15px;    
+        font-size: 15px;
     }
 
     .formInputs div span {
